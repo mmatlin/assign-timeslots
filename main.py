@@ -216,7 +216,6 @@ def create_leader_schedules(availability_table, leader_ids, student_ids):
             # No need to continue searching for better combinations
             break
 
-    print("Number of conflicting students:", score)
     return leader_schedules
 
 
@@ -284,6 +283,7 @@ def fill_students(availability_table, student_ids, leader_schedules):  # , roste
 
 def main():
     print(f"This program may take up to approximately {TIMEOUT} seconds!")
+    print()
     csv_filename = "real.csv"
 
     # Create roster
